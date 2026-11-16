@@ -33,3 +33,25 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .link { border: none; background: none; color: var(--brand); cursor: pointer; padding: 0; }
 .page-foot { display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px; color: var(--muted); }
 .error-text { color: #b42318; }
+
+/* ===== 共享面板、表单与版本展示 ===== */
+.panel { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; margin-bottom: 12px; }
+.panel-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.panel h3, .panel h4 { margin: 2px 0 8px; font-size: 14px; }
+.form-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; margin-bottom: 10px; }
+.form-grid .filter-item.wide { grid-column: span 2; }
+.filter-item input, .filter-item select { width: 100%; padding: 5px 8px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; background: #fff; }
+.detail-panel { margin-top: 14px; }
+.version-bar { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 12px; }
+.snapshot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; margin-bottom: 12px; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+@media (max-width: 1100px) { .two-col { grid-template-columns: 1fr; } }
+.alert { border: 1px solid #f4c790; background: #fff8ef; color: #8a4b08; border-radius: 8px; padding: 10px 12px; font-size: 13px; margin-bottom: 12px; }
+.tag { display: inline-block; border-radius: 10px; padding: 1px 8px; font-size: 12px; border: 1px solid var(--border); }
+.tag.ok { color: #177245; border-color: #a7d8bd; background: #effaf3; }
+.tag.warn { color: #8a4b08; border-color: #f4c790; background: #fff8ef; }
+.row-active td { background: #f2f7ff; }
+.ok-text { color: #177245; margin-right: 10px; }
+
+.alert.ok-alert { border-color: #a7d8bd; background: #effaf3; color: #177245; }
+.issue-list { margin: 6px 0 0; padding-left: 18px; }
